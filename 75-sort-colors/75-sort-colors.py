@@ -1,0 +1,20 @@
+class Solution:
+    def sortColors(self, nums):
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        
+        
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums),1):
+                if nums[i] > nums[j]:
+                    temp = nums[i]
+                    nums[i]=nums[j]
+                    nums[j]=temp
+                    
+                else:
+                    continue
+                    
+                    
+        # return nums
+        
